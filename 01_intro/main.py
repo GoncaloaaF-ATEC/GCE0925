@@ -47,9 +47,10 @@ print(f"Estanos no ano de {ano}. O {nome} tem {altura}m")
 
 num1 = 10
 num2 = 20
+num3 = 30
 
-soma = num1 + num2
-print(f"{num1} + {num2} = {soma}")
+soma = num1 + num3   # o calculo da soma e feito aqui
+print(f"{num1} + {num3} = {soma}") # So a msg que vai aparecer na consola
 
 
 sub1 = num1 - num2
@@ -143,3 +144,8 @@ ano_curr = 2025
 idade = int(input("Digite sua idade: ")) # int(), converte para int o que esta (), se não for possível -> Erro
 ano_nasc = ano_curr - idade
 print(ano_nasc)
+
+
+# print(teste) # so podem usar uma var depois de a cirar
+teste = 10
+print(teste)

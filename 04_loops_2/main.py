@@ -21,7 +21,7 @@ loops
 
 """
 
-break
+break <- ? 
 continue 
 range
 for
@@ -106,14 +106,17 @@ while i < total:
     if i == 1:
         maior = num
         menor = num
+        continue
 
     if num > maior:
         print("numero maior")
         maior = num
+        continue
 
     if num < menor:
         print("numero menor")
         menor = num
+        continue
 
 
 print(f"maior = {maior}")

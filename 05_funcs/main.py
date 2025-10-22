@@ -36,3 +36,37 @@ ola_mundo2("Pedro")
 Crie uma função que receber um numero e diga se ele e par ou impar 
 
 """
+
+
+
+def par_ou_impar(numero):
+
+    if numero % 2 == 0:
+        print(f"O número {numero} é par.")
+    else:
+        print(f"O número {numero} é ímpar.")
+
+
+
+
+num = int(input("insira o primeiro numero: "))
+
+par_ou_impar(num)
+par_ou_impar(31)
+par_ou_impar(40)
+
+
+
+def ola_mundo3(nome, ano):
+    print(f"Ola Mundo, {nome} no ano de {ano}")
+
+
+ola_mundo3("Rita", 2020)
+
+
+"""
+
+crie uma função que receba dois números e 
+mostre todos os valores inteiros entre esses dois valores  
+
+"""

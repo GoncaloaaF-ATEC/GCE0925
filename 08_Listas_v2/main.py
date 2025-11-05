@@ -137,8 +137,139 @@ mostre a lista inicial
     
 mostre a lista final
 
+Quando estiver terminado -> levantar a mão
+
 """
+print("---------")
+nomes = ["Rui", "Joao", "Carlos", "Rita", "Maria"]
 
+print(nomes)
 
+nomes.pop(2)
+print(nomes)
+
+nomes.pop(0)
+print(nomes)
+
+nomes.pop()
+print(nomes)
 
 # pelo valor
+
+print("---------")
+nomes = ["Rui", "Joao", "Carlos", "Rita", "Maria", "Joana", "Diana"]
+print(nomes)
+
+nomes.remove("Joao")
+print(nomes)
+
+print("---------")
+nomes = ["Rui", "Joao", "Carlos", "Rita","Joao", "Maria", "Joana", "Diana", "Joao"]
+print(nomes)
+
+nomes.remove("Joao")
+# print(nomes.index("Joao", 5))
+
+print("---------")
+
+"""
+Listas 
+    num de elementos
+    criamos
+    add elem
+    acedemos a ele 
+    remove elem
+        idx
+        valor
+    percorrer a lista  
+"""
+print("---------")
+
+nomes = ["Rui", "Joao", "CarlOs", "RIta","JoAo", "Maria", "JoAna", "diana", "Joao"]
+print(nomes)
+print("--")
+for elemento in nomes:
+    print(f"o nome é {elemento.capitalize()}")
+
+print("---------")
+
+
+
+# num = input("informe um numero: ") # -> recebe um str -> txt
+
+# num = int(input("informe um numero: ")) # -> recebe um str e converte para int
+
+"""
+crie uma lista com 2 valores inteiros 
+Peça ao utilzador números ate ser intruduzido um valor negativo 
+adicione esse numero no fim da lista 
+
+mostre a lista
+"""
+
+lista1 = [1 ,2]
+print("---- Aqui ----")
+while True:
+    num = int(input("informe um numero: "))
+
+    if num < 0:
+        break
+
+    lista1.append(num)
+
+
+
+print(lista1)
+
+"""
+
+tendo a lista [1,12,34,134,1241,4123]
+
+peça ao utilziador um num e adcione a lista na pos correcta de forma a que a liste fique sempre ordenada 
+
+"""
+print("---- Aqui2 ----")
+lista = [1,12,34,134,1241,4123]
+num = int(input("informe um numero: "))
+
+
+for i in range(0,len(lista)):
+    if lista[i] > num:
+        lista.insert(i, num)
+        break
+
+
+print(lista)
+
+"""
+Ex2:
+
+crie uma lista com 2 valores inteiros, ordenados 
+Peça ao utilzador um número indeterminado de valores inteiros 
+    (quando for inserido um valor negativo o loop deve terminar)
+adicione o numero fornecido na posição correta para que a lista fique ordenada 
+
+"""
+print("---- Aqui3 ----")
+
+
+print("---- Aqui4 ----")
+lista1 = [1 ,2]
+print(lista1)
+while True:
+    num = int(input("informe um numero: "))
+
+    if num < 0:
+        break
+
+    if num > lista1[-1]:
+        lista1.append(num)
+        continue
+
+    for i in range(0, len(lista1)):
+        if lista1[i] > num:
+            lista1.insert(i, num)
+            break
+
+
+    print(lista1)
